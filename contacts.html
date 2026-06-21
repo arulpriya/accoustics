@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacts | Structural Acoustics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">STRUCTURAL<span>ACOUSTICS</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research-experience.html">Research &amp; Experience</a></li>
+          <li><a href="engineering-services.html">Engineering Services</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="contacts.html" class="btn btn-primary">Enquire Now</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="hero" id="Contact" style="padding-bottom:40px;">
+    <div class="container">
+      <div class="eyebrow reveal">Contact</div>
+      <h1 class="reveal" style="font-size:clamp(1.8rem,4.5vw,3.2rem);">Get in touch for consultations or research inquiries.</h1>
+    </div>
+  </section>
+
+  <section style="padding-top:20px;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <form id="contactForm" class="reveal" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input id="fname" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input id="lname" type="text" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input id="email" type="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input id="phone" type="tel" placeholder="+91" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name *</label>
+            <input id="company" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="etype">Enquiry Type *</label>
+            <select id="etype" required>
+              <option value="">Select…</option>
+              <option>Finite Element Analysis</option>
+              <option>Vibration &amp; Acoustics</option>
+              <option>Facade Design &amp; STC</option>
+              <option>Research</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-msg" id="formMsg"></div>
+        </form>
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <h2 class="section-title" style="font-size:1.6rem;">Business Communications Network</h2>
+          <p style="margin-bottom:28px;">Structural Acoustics provides specialized engineering research and vibration analysis. Let's discuss your needs &amp; requirements.</p>
+          <div class="info-block">
+            <h4>Research Inquiries</h4>
+            <p>Email: 0000000000@structuralacoustics.in</p>
+            <p>Mobile: +91-0000000000</p>
+          </div>
+          <div class="info-block">
+            <h4>Office</h4>
+            <p>
+              Structural Acoustics<br>
+              Aira Garden, Madhya Pradesh<br>
+              250, Wipro Tech Park<br>
+              Sector 20, Beach Road<br>
+              Meghalaya - 10000, India
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="copy">[ © 2026 STRUCTURAL ACOUSTICS — BUILT FOR PERFORMANCE ]</div>
+      <div class="footer-links">
+        <a href="#">LINKEDIN</a>
+        <a href="#">RESEARCHGATE</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
