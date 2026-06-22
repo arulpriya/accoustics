@@ -37,33 +37,40 @@
       <div class="contact-grid">
         <!-- Form -->
         <form id="contactForm" class="reveal" novalidate>
+          <!-- Web3Forms access key (replace with your own from web3forms.com) -->
+          <input type="hidden" name="access_key" value="8f0f5b92-4074-416d-9fd7-ac6065cb70e3" />
+          <!-- Recipient + subject controls -->
+          <input type="hidden" name="subject" value="New Enquiry from Structural Acoustics website" />
+          <input type="hidden" name="from_name" value="Structural Acoustics Website" />
+          <!-- Honeypot spam filter (keep hidden) -->
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name *</label>
-              <input id="fname" type="text" required />
+              <input id="fname" name="First Name" type="text" required />
             </div>
             <div class="form-group">
               <label for="lname">Last Name *</label>
-              <input id="lname" type="text" required />
+              <input id="lname" name="Last Name" type="text" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="email">Email *</label>
-              <input id="email" type="email" required />
+              <input id="email" name="email" type="email" required />
             </div>
             <div class="form-group">
               <label for="phone">Phone *</label>
-              <input id="phone" type="tel" placeholder="+91" required />
+              <input id="phone" name="Phone" type="tel" placeholder="+91" required />
             </div>
           </div>
           <div class="form-group">
             <label for="company">Company Name *</label>
-            <input id="company" type="text" required />
+            <input id="company" name="Company Name" type="text" required />
           </div>
           <div class="form-group">
             <label for="etype">Enquiry Type *</label>
-            <select id="etype" required>
+            <select id="etype" name="Enquiry Type" required>
               <option value="">Select…</option>
               <option>Finite Element Analysis</option>
               <option>Vibration &amp; Acoustics</option>
@@ -74,7 +81,7 @@
           </div>
           <div class="form-group">
             <label for="message">Message *</label>
-            <textarea id="message" required></textarea>
+            <textarea id="message" name="Message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
           <div class="form-msg" id="formMsg"></div>
